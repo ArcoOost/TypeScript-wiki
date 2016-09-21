@@ -17,7 +17,7 @@ var x: number | string;
 
 if (typeof x === "number") {
     function inner(): number {
-        return x; // Error, type of x is not narrowed, c is number | string
+        return x; // Error, type of x is not narrowed, x is number | string
     }
     var y: number = x; // OK, x is number
 }
